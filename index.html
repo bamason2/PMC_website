@@ -33,7 +33,7 @@
 				<nav class="main-nav navbar navbar-expand-lg">
 					<div class="site-logo"><a class="scrollto" href="#hero-block"><img class="logo-icon" src="assets/images/logo-white.svg" alt="logo"></a></div>    
 					
-					<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Attend</a></div>
+					<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="https://www.lboro.ac.uk/sport/shop/" target="_blank">Register</a></div>
 					
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@
 							<li class="nav-item"><a class="nav-link scrollto" href="#about-section">About</a></li>                                              
 							<li class="nav-item"><a class="nav-link scrollto" href="#schedule-section">Important Dates</a></li>
 							<li class="nav-item"><a class="nav-link scrollto" href="#venue-section">Venue</a></li>
-							<li class="nav-item"><a class="nav-link scrollto" href="#sponsors-section">Sponsors</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="#submit-abstract">Submit Abstract</a></li>
 						</ul><!--//nav-->
 					</div><!--//navabr-collapse-->
 
@@ -261,17 +261,15 @@
 		<div class="container">
 			<h3 class="section-heading text-center mb-3">Attend the conference</h3>
 			<div class="row pricing mb-3">
-				<div class="col-12 col-md-4 p-2 p-lg-4">
+				<div class="col-12 col-md-6 p-2 p-lg-4">
 					<div class="card card-special rounded-0 border-0">
 						<div class="card-body p-0">
-							<div class="heading  text-center p-3">
+							<div class="heading text-center p-3">
 								<h4 class="text-white mb-0">Early Bird</h4>
 							</div>
 							<div class="info p-3">
-								<div class="price-figure text-center"><span class="currency">£</span><span class="number">495</span></div>
-								<div class="desc px-3">
-									Purchase before 1st June 2022.
-								</div>
+								<div class="price-figure text-center mb-3"><span class="currency">£</span><span class="number">495</span></div>
+								<div class="desc px-3 text-center">Register before 1st June 2022.</div>
 							</div><!--//info-->
 						</div><!--//card-body-->
 						<div class="card-footer text-center">
@@ -279,7 +277,7 @@
 						</div>
 					</div><!--//card-->
 				</div><!--//col-->
-				<div class="col-12 col-md-4 p-2 p-lg-4">
+				<div class="col-12 col-md-6 p-2 p-lg-4">
 					<div class="card rounded-0 border-0">
 						<div class="card-body p-0">
 							<div class="heading  text-center p-3">
@@ -287,9 +285,7 @@
 							</div>
 							<div class="info p-3">
 								<div class="price-figure text-center mb-3"><span class="currency">£</span><span class="number">595</span></div>
-								<div class="desc px-3">
-									Additional freebies and benefits included. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 						    
-								</div>
+								<div class="desc px-3 text-center">Registration cost after 1st June 2022.</div>
 							</div><!--//info-->
 						</div><!--//card-body-->
 						<div class="card-footer text-center">
@@ -354,6 +350,47 @@
 		</div><!--//container-->
 	</section><!--//venue-section-->
 
+	<section id="submit-abstract" class="sponsors-section section">
+		<div class="container">
+			<h3 class="section-heading text-center mb-3">Submit an Abstract</h3>
+			<div class="section-intro text-center single-col-max mx-auto mb-5">To submit an abstract please complete the details below and </div>
+
+			<div>
+				<form action="https://formspree.io/f/xbjwjvpp" method='POST'>
+
+					<div class="form-group">
+					  <label for="FullName">Full name</label>
+					  <input type="text" class="form-control" id="FullName" placeholder="Enter full name" name="InputName">
+					</div>
+
+					<div class="form-group">
+						<label for="InputEmail">Email address</label>
+						<input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email address" name="InputEmail">
+					</div>
+
+					<div class="form-group">
+						<label for="CompanyName">Company or university name</label>
+						<input type="text" class="form-control" id="CompanyName" aria-describedby="emailHelp" placeholder="Enter company name" name="InputCompany">
+					</div>
+
+					<div class="form-group">
+						<label for="Abstract">Abstract (max 500 words)</label>
+						<textarea type="text" rows="5" class="form-control" id="Abstract" aria-describedby="emailHelp" placeholder="Write a short abstract" name="InputText" required=""></textarea>
+					</div>
+					
+					<div>
+						<button type="submit" class="btn btn-primary text-right">Submit</button>
+					</div>
+
+				  </form>
+			</div>
+			
+			<!-- <div class="sponsors-cta text-center pt-5"><a class="btn-primary btn btn-lg" href="#">Become A Sponsor</a></div> -->
+		</div><!--//container-->
+	</section><!--//sponsors-section-->
+
+	<hr>
+
 	<section id="sponsors-section" class="sponsors-section section">
 		<div class="container">
 			<h3 class="section-heading text-center mb-3">Sponsors &amp; Partners</h3>
@@ -361,16 +398,6 @@
 			<!-- <div class="row logos justify-content-center">
 				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-1.svg" alt=""></div>
 				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-2.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-3.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-4.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-5.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-6.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-7.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-8.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-9.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-10.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-11.svg" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/logo-12.svg" alt=""></div>
 			</div>//row -->
 			<!-- <div class="sponsors-cta text-center pt-5"><a class="btn-primary btn btn-lg" href="#">Become A Sponsor</a></div> -->
 		</div><!--//container-->
@@ -400,43 +427,6 @@
 			
 		</div><!--//container-->	    
 	</footer>
-
-	<!-- Modal Speaker -->
-	<div class="modal modal-speaker modal-speaker-1" id="modal-speaker-1" tabindex="-1" role="dialog" aria-labelledby="speaker-1-ModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 id="speaker-1-ModalLabel" class="modal-title sr-only"
->Speaker Name</h4>
-				</div>
-				<div class="modal-body p-0">
-					<div class="theme-bg-light p-5">
-						<div class="row">
-							<div class="col-12 col-md-auto text-center">
-							    <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="assets/images/speakers/speaker-1.jpg" alt="" />
-							</div>
-							
-							<div class="col text-center text-md-start mx-auto">
-								<h2 class="name mb-2">Speaker Name</h2>
-								<div class="meta">Job Title Or Position</div>
-								<div class="meta mb-2">Company Or Organization</div>
-								<ul class="social-list list-inline mb-0">								
-									<li class="list-inline-item"><a  href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-									<li class="list-inline-item"><a  href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-									<li class="list-inline-item"><a  href="#"><i class="fab fa-github fa-fw"></i></a></li>
-								</ul><!--//social-list--> 
-							</div><!--//col-->
-						</div><!--//row-->
-					</div>
-					<div class="desc p-4 p-lg-5">
-						<p>You can put speaker's bio or talk related info here. Duis a mi quis metus porttitor eleifend. Pellentesque finibus ultrices imperdiet. Maecenas auctor tortor quis risus tincidunt, mattis mattis leo placerat. Fusce metus augue, sagittis eget enim vel, venenatis auctor est. In interdum felis massa, ac porta nunc pretium non. In fringilla orci vitae imperdiet malesuada. Vestibulum feugiat lobortis est, in sagittis nisi molestie vel. Mauris ultrices vitae lectus eu feugiat. Fusce semper, nisi at placerat mollis, augue elit pretium enim, eu pellentesque justo purus et lectus. </p>
-						<p class="mb-0">Donec neque magna, molestie vel varius ut, pretium a urna. Pellentesque placerat nunc eu condimentum pellentesque. Vivamus dictum nisl leo, id fermentum lectus porttitor et. Pellentesque tristique erat libero, condimentum porttitor nisl pharetra et.</p>
-					</div>
-				</div><!--//modal-body-->
-			</div><!--//modal-content-->
-		</div><!--//modal-dialog-->
-	</div><!--//modal-->
 	
 	<!-- Javascript -->          
 	<script src="assets/plugins/popper.min.js"></script>
